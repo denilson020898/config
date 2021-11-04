@@ -5,6 +5,8 @@ alias ff='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # some more ls aliases
 alias gs='git status'
 alias gl='git log --oneline --graph --decorate --max-count=10'
+alias ga='git add -A'
+alias gc='git commit -m '
 alias gu='gitui'
 
 alias ll='ls -al'
@@ -25,6 +27,8 @@ alias zp='nvim ~/.profile'
 
 alias zr='source ~/.zshrc'
 alias zc='nvim /etc/odoo.conf'
+
+alias ta='tmux a'
 
 eval "$(starship init zsh)"
 

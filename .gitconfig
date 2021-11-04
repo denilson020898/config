@@ -7,6 +7,9 @@
     gud = log --oneline --graph --decorate --all
     lola = log --oneline --graph --decorate --all
     adu = add -u .
+    s = status
+    a = add -A
+    c = commit -m
 [diff]
     tool = vimdiff
 [difftool]
