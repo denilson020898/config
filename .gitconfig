@@ -1,0 +1,23 @@
+[user]
+    name = Denilson
+    ;email = denilson@mplus.software
+    email = denilson020898@gmail.com
+[alias]
+    lol = log --oneline --graph --decorate --max-count=10
+    gud = log --oneline --graph --decorate --all
+    lola = log --oneline --graph --decorate --all
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
+[merge]
+    tool = vimdiff
+[mergetool "vimdiff"]
+    path = nvim
+[difftool "vimdiff"]
+    path = nvim
+[core]
+    editor = nvim
+    excludesfile = /home/denil/.gitignore_global
+[http]
+	postBuffer = 157286400
