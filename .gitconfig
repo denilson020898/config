@@ -19,7 +19,7 @@
     path = nvim
 [core]
     editor = nvim
-    excludesfile = /home/denil/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [http]
 	postBuffer = 157286400
 [cola]

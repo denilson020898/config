@@ -31,3 +31,28 @@ eval "$(starship init zsh)"
 if [[ ! $(tmux list-sessions) ]]; then 
   tmux
 fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export PATH=~/.local/bin:$PATH
+
+LIGHT_COLOR='gruvbox_light.yaml'
+DARK_COLOR='gruvbox_dark.yaml'
+
+alias day="alacritty-colorscheme -V apply $LIGHT_COLOR"
+alias night="alacritty-colorscheme -V apply $DARK_COLOR"
+alias toggle="alacritty-colorscheme -V toggle $LIGHT_COLOR $DARK_COLOR"
+
