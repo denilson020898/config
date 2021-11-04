@@ -3,6 +3,10 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias ff='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # some more ls aliases
+alias gs='git status'
+alias gl='git log --oneline --graph --decorate --max-count=10'
+alias gu='gitui'
+
 alias ll='ls -al'
 alias la='ls -a'
 alias l='ls -cf'

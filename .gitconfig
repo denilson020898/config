@@ -6,6 +6,7 @@
     lol = log --oneline --graph --decorate --max-count=10
     gud = log --oneline --graph --decorate --all
     lola = log --oneline --graph --decorate --all
+    adu = add -u .
 [diff]
     tool = vimdiff
 [difftool]
