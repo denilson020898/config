@@ -1,0 +1,6 @@
+[battery]
+disabled = true
+
+[conda]
+# format = "env [$symbol$environment]($style) "
+ignore_base = false
