@@ -21,3 +21,5 @@
     excludesfile = /home/denil/.gitignore_global
 [http]
 	postBuffer = 157286400
+[cola]
+	spellcheck = false

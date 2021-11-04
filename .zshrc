@@ -1,7 +1,6 @@
 # Created by newuser for 5.8
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
-eval "$(starship init zsh)"
+alias ff='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # some more ls aliases
 alias ll='ls -al'
@@ -22,3 +21,9 @@ alias zp='nvim ~/.profile'
 
 alias zr='source ~/.zshrc'
 alias zc='nvim /etc/odoo.conf'
+
+eval "$(starship init zsh)"
+
+if [[ ! $(tmux list-sessions) ]]; then 
+  tmux
+fi
