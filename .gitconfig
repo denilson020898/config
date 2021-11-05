@@ -6,6 +6,8 @@
     lol = log --oneline --graph --decorate --max-count=10
     gud = log --oneline --graph --decorate --all
     lola = log --oneline --graph --decorate --all
+    ld = log --graph --pretty=format:'%C(yellow)%h%x09%Creset%C(cyan)%C(bold)%ad%Creset %C(yellow)%cn%Creset  %C(green)%Creset %s' --date=default
+    lg = log --graph --pretty=format:'%C(yellow)%h%x09%Creset%C(cyan)%C(bold)%ad%Creset %C(yellow)%cn%Creset  %C(green)%Creset %s' --date=default --grep
     adu = add -u .
     s = status
     a = add -A
