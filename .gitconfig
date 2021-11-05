@@ -6,6 +6,10 @@
     lol = log --oneline --graph --decorate --max-count=10
     gud = log --oneline --graph --decorate --all
     lola = log --oneline --graph --decorate --all
+    adu = add -u .
+    s = status
+    a = add -A
+    c = commit -m
 [diff]
     tool = vimdiff
 [difftool]
@@ -18,6 +22,8 @@
     path = nvim
 [core]
     editor = nvim
-    excludesfile = /home/denil/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [http]
 	postBuffer = 157286400
+[cola]
+	spellcheck = false
