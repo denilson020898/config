@@ -28,6 +28,17 @@ alias zp='nvim ~/.profile'
 alias zr='source ~/.zshrc'
 alias zc='nvim /etc/odoo.conf'
 
+alias spg='sudo service postgresql start'
+alias sap='sudo service apache2 start'
+alias sms='sudo service mysql start'
+alias o='~/odoo/odoo-bin -c /etc/odoo.conf'
+alias od='~/odoo/odoo-bin -c /etc/odoo.conf --dev reload,xml'
+alias ox='~/odoo/odoo-bin -c /etc/odoo.conf --dev xml,qweb'
+alias oda='~/odoo/odoo-bin -c /etc/odoo.conf --dev all'
+alias po='python3 -m debugpy --listen localhost:5678 ~/odoo/odoo-bin -c /etc/odoo.conf --limit-time-real 0'
+alias pod='python3 -m debugpy --listen localhost:5678 ~/odoo/odoo-bin -c /etc/odoo.conf --limit-time-real 0 --dev reload,xml'
+alias poda='python3 -m debugpy --listen localhost:5678 ~/odoo/odoo-bin -c /etc/odoo.conf --limit-time-real 0 --dev all'
+
 alias ta='tmux a'
 
 eval "$(starship init zsh)"
