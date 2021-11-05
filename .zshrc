@@ -66,12 +66,13 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export PATH=~/.local/bin:$PATH
-
 LIGHT_COLOR='gruvbox_light.yaml'
 DARK_COLOR='gruvbox_dark.yaml'
 
 alias day="alacritty-colorscheme -V apply $LIGHT_COLOR"
 alias night="alacritty-colorscheme -V apply $DARK_COLOR"
 alias toggle="alacritty-colorscheme -V toggle $LIGHT_COLOR $DARK_COLOR"
-PATH="$HOME/neovim/bin:$PATH"
+
+export PATH=~/.local/bin:$PATH
+export PATH="$HOME/neovim/bin:$PATH"
+source "$HOME/.cargo/env"
