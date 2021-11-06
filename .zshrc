@@ -54,6 +54,8 @@ alias day="alacritty-colorscheme -V apply $LIGHT_COLOR"
 alias night="alacritty-colorscheme -V apply $DARK_COLOR"
 alias toggle="alacritty-colorscheme -V toggle $LIGHT_COLOR $DARK_COLOR"
 
+export PYTHONPATH="$HOME/d/odoo:$PYTHONPATH"
+
 export PATH=~/.local/bin:$PATH
 export PATH="$HOME/neovim/bin:$PATH"
 source "$HOME/.cargo/env"
