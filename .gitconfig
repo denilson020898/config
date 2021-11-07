@@ -29,3 +29,5 @@
 	postBuffer = 157286400
 [cola]
 	spellcheck = false
+[pull]
+	rebase = true
