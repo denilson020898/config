@@ -38,6 +38,8 @@ alias oda='~/d/odoo/odoo-bin -c ~/d/etc/odoo.conf --dev all'
 alias po='python3 -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c /d/odoo.conf --limit-time-real 0'
 alias pod='python3 -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c /d/odoo.conf --limit-time-real 0 --dev reload,xml'
 alias poda='python3 -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c /d/odoo.conf --limit-time-real 0 --dev all'
+alias so='~/d/odoo/odoo-bin shell -c ~/d/odoo.conf'
+alias bo='~/d/odoo/odoo-bin'
 
 alias ta='tmux a'
 
