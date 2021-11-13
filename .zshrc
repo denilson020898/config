@@ -45,6 +45,7 @@ alias poda='python3 -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c /d/o
 alias so='~/d/odoo/odoo-bin shell -c ~/d/odoo.conf'
 alias bo='~/d/odoo/odoo-bin'
 
+alias t='tmux'
 alias ta='tmux a'
 
 eval "$(starship init zsh)"
