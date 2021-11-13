@@ -117,13 +117,13 @@
                             },
                             "to": [
                                 {
-                                    "key_code": "left_control"
+                                    "key_code": "left_option"
                                 }
                             ]
                         },
                         {
                             "from": {
-                                "key_code": "left_control"
+                                "key_code": "left_option"
                             },
                             "to": [
                                 {
