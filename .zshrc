@@ -2,6 +2,10 @@
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias ff='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
+# bind zsh jump word
+bindkey "^[[1;3D" backward-word
+bindkey "^[[1;3C" forward-word
+
 # some more ls aliases
 alias gs='git status'
 alias gl='git log --oneline --graph --decorate --max-count=10'
