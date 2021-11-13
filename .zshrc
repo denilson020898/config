@@ -6,6 +6,8 @@ alias ff='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 bindkey "^[[1;3D" backward-word
 bindkey "^[[1;3C" forward-word
 
+alias db='(savestatus=$?; $HOME/donebeep $savestatus "$@"; exit $savestatus)'
+
 # some more ls aliases
 alias gs='git status'
 alias gl='git log --oneline --graph --decorate --max-count=10'
