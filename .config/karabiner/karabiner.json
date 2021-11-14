@@ -95,6 +95,30 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Spotlight (left_command+return to left_command+spacebar)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "return_or_enter",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": [
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
@@ -278,7 +302,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "left_control"
+                            "key_code": "escape"
                         }
                     ]
                 },
