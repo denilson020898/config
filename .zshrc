@@ -65,7 +65,8 @@ alias toggle="alacritty-colorscheme -V toggle $LIGHT_COLOR $DARK_COLOR"
 
 export PYTHONPATH="$HOME/d/odoo:$PYTHONPATH"
 
-export PATH=~/.local/bin:$PATH
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/share/nvim/lsp_servers/rust:$PATH"
 export PATH="$HOME/neovim/bin:$PATH"
 # export PATH="$HOME/.local/share/nvim/lsp_servers/rust:$PATH"
 source "$HOME/.cargo/env"
