@@ -324,6 +324,16 @@
                 },
                 {
                     "from": {
+                        "key_code": "right_command"
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_control"
+                        }
+                    ]
+                },
+                {
+                    "from": {
                         "key_code": "right_option"
                     },
                     "to": [
@@ -338,7 +348,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "right_control"
+                            "key_code": "right_shift"
                         }
                     ]
                 }

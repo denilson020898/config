@@ -118,6 +118,9 @@ font:
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
     family: JetBrainsMono Nerd Font
+    # family: Hasklug Nerd Font
+    # family: FiraCode Nerd Font
+    # family: Hack Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -156,7 +159,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 12.0
+  size: 13.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -176,7 +179,7 @@ font:
   #
   # Thin strokes are suitable for retina displays, but for non-retina screens
   # it is recommended to set `use_thin_strokes` to `false`.
-  # use_thin_strokes: true
+  use_thin_strokes: true
 
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
@@ -849,26 +852,28 @@ key_bindings:
   # - { key: B,              mods: Command, mode: ~Search,     action: SearchBackward        }
 
   # Custom
-  - { key: Key1, mods: Command, chars: "\x02\x31"  }
-  - { key: Key2, mods: Command, chars: "\x02\x32"  }
-  - { key: Key3, mods: Command, chars: "\x02\x33"  }
-  - { key: Key4, mods: Command, chars: "\x02\x34"  }
-  - { key: Key5, mods: Command, chars: "\x02\x35"  }
-  - { key: Key6, mods: Command, chars: "\x02\x36"  }
-  - { key: Key7, mods: Command, chars: "\x02\x37"  }
-  - { key: Key8, mods: Command, chars: "\x02\x38"  }
-  - { key: Key9, mods: Command, chars: "\x02\x39"  }
-  - { key: W, mods: Command, chars: "\x02\x78"  }
-  - { key: T, mods: Command, chars: "\x02\x63"  }
-  - { key: Z, mods: Command, chars: "\x02\x72"  }
-  - { key: D, mods: Command, chars: "\x02\x25"  }
-  - { key: S, mods: Command, chars: "\x02\x73"  }
-  - { key: U, mods: Command, chars: "\x02\x75"  }
-  - { key: I, mods: Command, chars: "\x02\x69"  }
-  - { key: H, mods: Command, chars: "\x02\x68"  }
-  - { key: J, mods: Command, chars: "\x02\x6a"  }
-  - { key: K, mods: Command, chars: "\x02\x6b"  }
-  - { key: L, mods: Command, chars: "\x02\x6c"  }
+  - { key: Key1, mods: Command, chars: "\x08\x31"  }
+  - { key: Key2, mods: Command, chars: "\x08\x32"  }
+  - { key: Key3, mods: Command, chars: "\x08\x33"  }
+  - { key: Key4, mods: Command, chars: "\x08\x34"  }
+  - { key: Key5, mods: Command, chars: "\x08\x35"  }
+  - { key: Key6, mods: Command, chars: "\x08\x36"  }
+  - { key: Key7, mods: Command, chars: "\x08\x37"  }
+  - { key: Key8, mods: Command, chars: "\x08\x38"  }
+  - { key: Key9, mods: Command, chars: "\x08\x39"  }
+  - { key: W, mods: Command, chars: "\x08\x78"  }
+  - { key: T, mods: Command, chars: "\x08\x63"  }
+  - { key: Z, mods: Command, chars: "\x08\x72"  }
+  - { key: D, mods: Command, chars: "\x08\x25"  }
+  - { key: S, mods: Command, chars: "\x08\x73"  }
+  - { key: U, mods: Command, chars: "\x08\x75"  }
+  - { key: I, mods: Command, chars: "\x08\x69"  }
+  - { key: H, mods: Command, chars: "\x08\x68"  }
+  - { key: J, mods: Command, chars: "\x08\x6a"  }
+  - { key: K, mods: Command, chars: "\x08\x6b"  }
+  - { key: L, mods: Command, chars: "\x08\x6c"  }
+  - { key: O, mods: Command, chars: "\x0c\x0a"  }
+  - { key: Semicolon, mods: Command, chars: "\x3a"  }
 
 #debug:
   # Display the time it takes to redraw each frame.
