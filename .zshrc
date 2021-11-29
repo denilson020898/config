@@ -40,7 +40,7 @@ alias sms='sudo service mysql start'
 alias o='~/d/odoo/odoo-bin -c ~/d/odoo.conf'
 alias od='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev reload,xml'
 alias ox='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev xml,qweb'
-alias oda='~/d/odoo/odoo-bin -c ~/d/etc/odoo.conf --dev all'
+alias oda='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev all'
 alias po='python3 -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c /d/odoo.conf --limit-time-real 0'
 alias pod='python3 -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c /d/odoo.conf --limit-time-real 0 --dev reload,xml'
 alias poda='python3 -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c /d/odoo.conf --limit-time-real 0 --dev all'
@@ -68,6 +68,8 @@ export PYTHONPATH="$HOME/d/odoo:$PYTHONPATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/share/nvim/lsp_servers/rust:$PATH"
 export PATH="$HOME/neovim/bin:$PATH"
+export PATH="$HOME/d/git-cola/bin:$PATH"
+
 # export PATH="$HOME/.local/share/nvim/lsp_servers/rust:$PATH"
 source "$HOME/.cargo/env"
 
