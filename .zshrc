@@ -37,13 +37,13 @@ alias zc='nvim ~/d/odoo.conf'
 alias spg='sudo service postgresql start'
 alias sap='sudo service apache2 start'
 alias sms='sudo service mysql start'
+
 alias o='~/d/odoo/odoo-bin -c ~/d/odoo.conf'
 alias od='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev reload,xml'
 alias ox='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev xml,qweb'
 alias oda='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev all'
-alias po='python3 -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c /d/odoo.conf --limit-time-real 0'
-alias pod='python3 -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c /d/odoo.conf --limit-time-real 0 --dev reload,xml'
-alias poda='python3 -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c /d/odoo.conf --limit-time-real 0 --dev all'
+
+alias po='python -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c ~/d/odoo.conf --limit-time-real 0'
 alias so='~/d/odoo/odoo-bin shell -c ~/d/odoo.conf'
 alias bo='~/d/odoo/odoo-bin'
 

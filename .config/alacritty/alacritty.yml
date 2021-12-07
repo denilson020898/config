@@ -879,6 +879,7 @@ key_bindings:
   - { key: K, mods: Command, chars: "\x08\x6b"  }
   - { key: L, mods: Command, chars: "\x08\x6c"  }
   - { key: Semicolon, mods: Command, chars: "\x3aqa"  }
+  - { key: Comma, mods: Command, chars: "\x3awqa"  }
   - { key: O, mods: Command, chars: "\x08\x0F"  }
   - { key: P, mods: Command, chars: "\x08\x70"  }
 
