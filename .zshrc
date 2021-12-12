@@ -26,6 +26,9 @@ alias et='exa -laFh --icons -T -L'
 alias ".."="cd .."
 alias "cd.."="cd .."
 
+alias 'pd'='pushd'
+alias 'dp'='popd'
+
 alias zd='pushd ~/.config/nvim/'
 alias zg='nvim ~/.gitconfig'
 alias zz='nvim ~/.zshrc'
@@ -43,7 +46,7 @@ alias od='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev reload,xml'
 alias ox='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev xml,qweb'
 alias oda='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev all'
 
-alias po='python -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c ~/d/odoo.conf --limit-time-real 0'
+alias po='python -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c ~/d/odoo.conf'
 alias so='~/d/odoo/odoo-bin shell -c ~/d/odoo.conf'
 alias bo='~/d/odoo/odoo-bin'
 
