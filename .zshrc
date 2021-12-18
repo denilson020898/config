@@ -72,6 +72,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/share/nvim/lsp_servers/rust:$PATH"
 export PATH="$HOME/neovim/bin:$PATH"
 export PATH="$HOME/d/git-cola/bin:$PATH"
+# export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 # export PATH="$HOME/.local/share/nvim/lsp_servers/rust:$PATH"
 source "$HOME/.cargo/env"

@@ -12,23 +12,8 @@
     s = status
     a = add -A
     c = commit -m
-[diff]
-    tool = vimdiff
-[difftool]
-    prompt = false
-[merge]
-    tool = vimdiff
-[mergetool "vimdiff"]
-    path = nvim
-[difftool "vimdiff"]
-    path = nvim
 [core]
     editor = nvim
 	excludesfile = ~/.gitignore_global
-
 [pull]
 	rebase = true
-
-[gui]
-	fontui = -family \"JetBrainsMono Nerd Font\" -size 13 -weight normal -slant roman -underline 0 -overstrike 0
-	fontdiff = -family \"JetBrainsMono Nerd Font\" -size 11 -weight normal -slant roman -underline 0 -overstrike 0

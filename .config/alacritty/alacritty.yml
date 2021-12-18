@@ -882,6 +882,7 @@ key_bindings:
   - { key: Comma, mods: Command, chars: "\x3awqa"  }
   - { key: O, mods: Command, chars: "\x08\x0F"  }
   - { key: P, mods: Command, chars: "\x08\x70"  }
+  - { key: Slash, mods: Command, chars: "\x08\x5b\x1b\x3f"  }
 
 #debug:
   # Display the time it takes to redraw each frame.
