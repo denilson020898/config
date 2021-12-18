@@ -37,6 +37,8 @@ alias zp='nvim ~/.profile'
 alias zr='source ~/.zshrc'
 alias zc='nvim ~/d/odoo.conf'
 
+alias zp='rm -r ~/.local/share/nvim/sessions'
+
 alias spg='sudo service postgresql start'
 alias sap='sudo service apache2 start'
 alias sms='sudo service mysql start'
