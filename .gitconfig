@@ -1,7 +1,7 @@
 [user]
 	name = denilson
     ;email = denilson@mplus.software
-    email = denilson020898@gmail.com
+	email = denilson020898@gmail.com
 [alias]
     lol = log --oneline --graph --decorate --max-count=10
     gud = log --oneline --graph --decorate --all
