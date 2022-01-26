@@ -17,3 +17,6 @@
 	excludesfile = ~/.gitignore_global
 [pull]
 	rebase = true
+[gui]
+	fontui = -family \"JetBrainsMono Nerd Font\" -size 13 -weight normal -slant roman -underline 0 -overstrike 0
+	fontdiff = -family \"JetBrainsMono Nerd Font\" -size 11 -weight normal -slant roman -underline 0 -overstrike 0

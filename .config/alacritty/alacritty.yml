@@ -119,6 +119,7 @@ font:
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
     family: JetBrainsMono Nerd Font
+    # family: LiterationMono Nerd Font
     # family: Hasklug Nerd Font
     # family: FiraCode Nerd Font
     # family: Hack Nerd Font
