@@ -5,6 +5,8 @@ alias ff='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # bind zsh jump word
 bindkey "^[[1;3D" backward-word
 bindkey "^[[1;3C" forward-word
+bindkey "^[[1;4D" beginning-of-line
+bindkey "^[[1;4C" end-of-line
 
 alias db='(savestatus=$?; $HOME/s/donebeep $savestatus "$@"; exit $savestatus)'
 
