@@ -11,13 +11,15 @@ bindkey "^[[1;4C" end-of-line
 alias db='(savestatus=$?; $HOME/s/donebeep $savestatus "$@"; exit $savestatus)'
 
 # some more ls aliases
+# alias code='codium'
+
 alias gs='git status'
 alias gl='git log --oneline --graph --decorate --max-count=10'
 alias ga='git add -A'
 alias gc='git commit -m '
 alias gu='gitui'
 
-alias ll='ls -al'
+alias ll='ls -alh'
 alias la='ls -a'
 alias l='ls -cf'
 alias e='exa -Fh --icons'
@@ -79,6 +81,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/share/nvim/lsp_servers/rust:$PATH"
 export PATH="$HOME/neovim/bin:$PATH"
 export PATH="$HOME/d/git-cola/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
 # export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 
 # export PATH="$HOME/.local/share/nvim/lsp_servers/rust:$PATH"
