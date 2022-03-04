@@ -68,7 +68,11 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  #opacity: 1.0
+  # opacity: 0.85
+  # opacity: 0.875
+  # opacity: 0.9
+  opacity: 0.925
+  # opacity: 0.95
 
   # Startup Mode (changes require restart)
   #
@@ -118,18 +122,18 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: JetBrainsMono Nerd Font
+    # family: JetBrainsMono Nerd Font
+    # family: FiraCode Nerd Font
     # family: VictorMono Nerd Font
     # family: SauceCodePro Nerd Font
     # family: CaskaydiaCove Nerd Font
     # family: BlexMono Nerd Font Mono
-    # family: LiterationMono Nerd Font
+    family: LiterationMono Nerd Font
     # family: Hasklug Nerd Font
-    # family: FiraCode Nerd Font
     # family: Hack Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    style: Regular
+    # style: Regular
     # style: Medium
 
   # Bold font face
@@ -166,7 +170,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 12.0
+  size: 11
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -890,6 +894,7 @@ key_bindings:
   - { key: O, mods: Command, chars: "\x08\x0F"  }
   - { key: P, mods: Command, chars: "\x08\x70"  }
   - { key: Slash, mods: Command, chars: "\x08\x5b\x1b\x3f"  }
+  - { key: E, mods: Command, chars: "\x05"  }
 
 #debug:
   # Display the time it takes to redraw each frame.
