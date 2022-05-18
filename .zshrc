@@ -51,13 +51,22 @@ alias sap='sudo service apache2 start'
 alias sms='sudo service mysql start'
 
 alias o='~/d/odoo/odoo-bin -c ~/d/odoo.conf'
+alias op='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev reload,pdb'
 alias od='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev reload,xml'
 alias ox='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev xml,qweb'
 alias oda='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev all'
-
 alias po='python -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c ~/d/odoo.conf'
 alias so='~/d/odoo/odoo-bin shell -c ~/d/odoo.conf'
 alias bo='~/d/odoo/odoo-bin'
+
+alias to='~/d/odoo/odoo-bin -c ~/d/odoo-temp.conf'
+alias top='~/d/odoo/odoo-bin -c ~/d/odoo-temp.conf --dev reload,pdb'
+alias tod='~/d/odoo/odoo-bin -c ~/d/odoo-temp.conf --dev reload,xml'
+alias tox='~/d/odoo/odoo-bin -c ~/d/odoo-temp.conf --dev xml,qweb'
+alias toda='~/d/odoo/odoo-bin -c ~/d/odoo-temp.conf --dev all'
+alias tpo='python -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c ~/d/odoo-temp.conf'
+alias tso='~/d/odoo/odoo-bin shell -c ~/d/odoo-temp.conf'
+alias tbo='~/d/odoo/odoo-bin'
 
 alias t='tmux'
 alias ta='tmux a'
@@ -110,3 +119,4 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PSQL_PAGER="pspg --interactive -s=19"

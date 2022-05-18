@@ -269,21 +269,21 @@
                 },
                 {
                     "from": {
-                        "key_code": "right_option"
-                    },
-                    "to": [
-                        {
-                            "apple_vendor_top_case_key_code": "keyboard_fn"
-                        }
-                    ]
-                },
-                {
-                    "from": {
                         "key_code": "right_command"
                     },
                     "to": [
                         {
                             "key_code": "right_control"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "right_option"
+                    },
+                    "to": [
+                        {
+                            "apple_vendor_top_case_key_code": "keyboard_fn"
                         }
                     ]
                 }
