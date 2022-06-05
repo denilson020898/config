@@ -71,6 +71,11 @@ alias tbo='~/d/odoo/odoo-bin'
 alias t='tmux'
 alias ta='tmux a'
 
+alias ty='tty'
+alias tp='perl -MPOSIX -e pause'
+# Set breakpoint() in Python to call pudb
+export PYTHONBREAKPOINT="pudb.set_trace"
+
 eval "$(starship init zsh)"
 
 if [[ ! $(tmux list-sessions) ]]; then
@@ -120,3 +125,4 @@ unset __conda_setup
 
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export PSQL_PAGER="pspg --interactive -s=19"
+
