@@ -219,7 +219,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "tab"
+                            "key_code": "hyphen"
                         }
                     ]
                 },
@@ -236,6 +236,16 @@
                 {
                     "from": {
                         "key_code": "right_option"
+                    },
+                    "to": [
+                        {
+                            "key_code": "equal_sign"
+                        }
+                    ]
+                },
+                {
+                    "from": {
+                        "key_code": "left_control"
                     },
                     "to": [
                         {
