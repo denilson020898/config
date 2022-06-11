@@ -125,4 +125,6 @@ unset __conda_setup
 
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export PSQL_PAGER="pspg --interactive -s=19"
+export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/adapter/:$PATH"
+export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/lldb/bin/:$PATH"
 
