@@ -215,11 +215,21 @@
                 },
                 {
                     "from": {
+                        "key_code": "left_control"
+                    },
+                    "to": [
+                        {
+                            "apple_vendor_top_case_key_code": "keyboard_fn"
+                        }
+                    ]
+                },
+                {
+                    "from": {
                         "key_code": "right_command"
                     },
                     "to": [
                         {
-                            "key_code": "hyphen"
+                            "key_code": "right_option"
                         }
                     ]
                 },
@@ -239,17 +249,17 @@
                     },
                     "to": [
                         {
-                            "key_code": "equal_sign"
+                            "key_code": "hyphen"
                         }
                     ]
                 },
                 {
                     "from": {
-                        "key_code": "left_control"
+                        "key_code": "right_shift"
                     },
                     "to": [
                         {
-                            "apple_vendor_top_case_key_code": "keyboard_fn"
+                            "key_code": "left_control"
                         }
                     ]
                 }
