@@ -122,17 +122,10 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    # family: JetBrainsMono Nerd Font
+    # family: Hack Nerd Font
+    family: VictorMono Nerd Font
     # family: Iosevka Nerd Font
-    # family: FiraCode Nerd Font
-    # family: VictorMono Nerd Font
-    # family: Monoid Nerd Font
-    # family: SauceCodePro Nerd Font
-    # family: CaskaydiaCove Nerd Font
-    # family: BlexMono Nerd Font Mono
-    # family: LiterationMono Nerd Font
-    # family: Hasklug Nerd Font
-    family: Hack Nerd Font
+    # family: mplus Nerd Font Mono
 
     # The `style` can be specified to pick a specific face.
     # style: Regular
@@ -171,7 +164,7 @@ font:
     # family: LiterationMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    # style: Thin
+    # style: Italic
     # style: Oblique
 
   # Bold italic font face
@@ -191,7 +184,7 @@ font:
     # style: Light Italic
 
   # Point size
-  size: 12
+  size: 13
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -975,7 +968,7 @@ key_bindings:
   - { key: J, mods: Command, chars: "\x08\x6a"  }
   - { key: K, mods: Command, chars: "\x08\x6b"  }
   - { key: L, mods: Command, chars: "\x08\x6c"  }
-  - { key: Semicolon, mods: Command, chars: "\x3aqa"  }
+  - { key: Semicolon, mods: Command, chars: "ZZ"  }
   - { key: Comma, mods: Command, chars: "\x08\x3c"  }
   - { key: Period, mods: Command, chars: "\x08\x3e"  }
   - { key: O, mods: Command, chars: "\x08\x0F"  }

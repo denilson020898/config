@@ -42,8 +42,10 @@ alias zp='nvim ~/.profile'
 alias zr='source ~/.zshrc'
 alias zc='nvim ~/d/odoo.conf'
 
-alias gla='glab mr create -f -a denilson.mplus -b development -s'
-alias glar='glab mr create --remove-source-branch -f -a denilson.mplus -b development -s'
+alias gpro='git pull --rebase origin'
+alias gmc='glab mr create -f -a denilson.mplus'
+# alias gla='glab mr create -f -a denilson.mplus -b development -s'
+# alias glar='glab mr create --remove-source-branch -f -a denilson.mplus -b development -s'
 
 alias zp='rm -r ~/.local/share/nvim/sessions'
 

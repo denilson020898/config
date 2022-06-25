@@ -235,21 +235,11 @@
                 },
                 {
                     "from": {
-                        "key_code": "right_control"
-                    },
-                    "to": [
-                        {
-                            "key_code": "right_control"
-                        }
-                    ]
-                },
-                {
-                    "from": {
                         "key_code": "right_option"
                     },
                     "to": [
                         {
-                            "key_code": "hyphen"
+                            "key_code": "equal_sign"
                         }
                     ]
                 },
