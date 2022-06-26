@@ -49,18 +49,8 @@ yabai -m config mouse_modifier ctrl
 yabai -m config mouse_action1 move
 yabai -m config mouse_action2 resize
 
-# # Terminal
 yabai -m rule --add app="^(Alacritty)$" space=1
-# # Web browsers
 yabai -m rule --add app="^Brave|Google Chrome|Firefox$" space=2
-# # Text editors
-# yabai -m rule --add app="^(Code|RStudio)$" space=2
-# # Jetbrains apps
-# apps="^(IntelliJ IDEA|WebStorm|RubyMine|PyCharm|DataGrip)$"
-# yabai -m rule --add app="${apps}" space=3  manage=off
-# # Music
-# yabai -m rule --add app="^(Spotify|Amazon Music)$" space=5
-# # Social
-# yabai -m rule --add app="^(Slack|WhatsApp|Microsoft Teams)$" space=6
+yabai -m rule --add app="^(Spotify|Amazon Music)$" space=3
 
 echo "yabai configuration loaded.."
