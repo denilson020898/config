@@ -941,7 +941,6 @@ key_bindings:
   - { key: Key6,      mods: Alt|Shift, chars: "\x1b^"  } # Alt + ^
   - { key: Backslash, mods: Alt,       chars: "\x1b\\" } # Alt + \
   - { key: Backslash, mods: Alt|Shift, chars: "\x1b|"  } # Alt + |
-
   # Custom
   - { key: H, mods: Alt, chars: "\x1bh" }
   - { key: J, mods: Alt, chars: "\x1bj" }
