@@ -62,7 +62,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  #decorations: full
+  decorations: "none"
 
   # Background opacity
   #
@@ -73,6 +73,7 @@ window:
   # opacity: 0.9
   # opacity: 0.925
   # opacity: 0.95
+  opacity: 0.98
 
   # Startup Mode (changes require restart)
   #

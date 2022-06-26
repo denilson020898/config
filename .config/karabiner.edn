@@ -3,7 +3,10 @@
   {:des "fn" :rules [[:##fn :left_control]]}
   {:des "left_control" :rules [[:##left_control :fn]]}
   {:des "right_command" :rules [[:##right_command :!Ofn]]}
+  {:des "right_option" :rules [[:##right_option :left_option]]}
+  {:des "right_shift" :rules [[:##right_shift :left_control]]}
 ]}
+
 ;; C  | left_command
 ;; T  | left_control
 ;; O  | left_option

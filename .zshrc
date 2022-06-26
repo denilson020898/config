@@ -26,6 +26,7 @@ alias e='exa -Fh --icons'
 alias ee='exa -laFh --icons'
 alias ea='exa -lFh --icons'
 alias et='exa -laFh --icons -T -L'
+alias z='cd'
 
 alias ".."="cd .."
 alias "cd.."="cd .."
@@ -33,7 +34,6 @@ alias "cd.."="cd .."
 alias 'pd'='pushd'
 alias 'dp'='popd'
 
-alias z='nvim'
 alias zd='pushd ~/.config/nvim/'
 alias zg='nvim ~/.gitconfig'
 alias zz='nvim ~/.zshrc'
@@ -131,3 +131,4 @@ export PSQL_PAGER="pspg --interactive -s=19"
 export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/adapter/:$PATH"
 export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/lldb/bin/:$PATH"
 
+eval "$(zoxide init zsh)"

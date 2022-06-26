@@ -148,10 +148,10 @@
 #           yabai -m window --toggle pip
 
 # Reload yabai
-alt + fn - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+alt + fn - 0 : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
-alt + fn - e : yabai -m space --layout bsp
-alt + fn - s : yabai -m space --layout stack
+alt + fn - b : yabai -m space --layout bsp
+alt + fn - v : yabai -m space --layout stack
 
 # focus window in bsp mode
 alt + fn - h: yabai -m window --focus west
@@ -159,15 +159,40 @@ alt + fn - j: yabai -m window --focus south
 alt + fn - k: yabai -m window --focus north
 alt + fn - l: yabai -m window --focus east
 
-alt + fn - p: yabai -m window --focus stack.prev
-alt + fn - n: yabai -m window --focus stack.next
-alt + fn - f: yabai -m window --focus stack.first
-alt + fn - g: yabai -m window --focus stack.last
+alt + fn - f: yabai -m window --toggle zoom-fullscreen
+alt + fn - g: yabai -m space --toggle padding; yabai -m space --toggle gap
+alt + fn - t: yabai -m window --toggle float;\
+              yabai -m window --grid 4:4:1:1:2:2
+
+alt + fn - e : yabai -m window --toggle split
+alt + fn - v : yabai -m space --balance
+
+alt + fn - w : yabai -m window --resize top:0:-20
+alt + fn - d : yabai -m window --resize left:-20:0
+alt + fn - s : yabai -m window --resize bottom:0:-20
+alt + fn - a : yabai -m window --resize top:0:20
+
+alt + fn + shift - h: yabai -m window --swap west
+alt + fn + shift - j: yabai -m window --swap south
+alt + fn + shift - k: yabai -m window --swap north
+alt + fn + shift - l: yabai -m window --swap east
+
+alt + fn + ctrl - h: yabai -m window --warp west
+alt + fn + ctrl - j: yabai -m window --warp south
+alt + fn + ctrl - k: yabai -m window --warp north
+alt + fn + ctrl - l: yabai -m window --warp east
+
+alt + fn - 0x2B: yabai -m window --focus stack.prev
+alt + fn - 0x2F: yabai -m window --focus stack.next
+# alt + fn - f: yabai -m window --focus stack.first
+# alt + fn - g: yabai -m window --focus stack.last
 
 # fast focus desktop
-alt + fn - left : yabai -m space --focus prev
-alt + fn - right : yabai -m space --focus next
-alt + fn - z : yabai -m space --focus recent
+alt + fn - p : yabai -m space --focus prev
+alt + fn - n : yabai -m space --focus next
+alt + fn - r : yabai -m space --focus recent
+alt + fn - u : yabai -m space --focus recent
+alt + fn - m : yabai -m space --focus recent
 alt + fn - 1 : yabai -m space --focus 1
 alt + fn - 2 : yabai -m space --focus 2
 alt + fn - 3 : yabai -m space --focus 3
