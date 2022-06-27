@@ -34,7 +34,7 @@ alias "cd.."="cd .."
 alias 'pd'='pushd'
 alias 'dp'='popd'
 
-alias zd='pushd ~/.config/nvim/'
+alias zd='cd ~/.config/nvim/'
 alias zg='nvim ~/.gitconfig'
 alias zz='nvim ~/.zshrc'
 alias zp='nvim ~/.profile'

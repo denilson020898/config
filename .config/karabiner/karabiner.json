@@ -173,34 +173,6 @@
           "type" : "basic"
         } ]
       }, {
-        "description" : "fn",
-        "manipulators" : [ {
-          "from" : {
-            "key_code" : "fn",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "left_control"
-          } ],
-          "type" : "basic"
-        } ]
-      }, {
-        "description" : "left_control",
-        "manipulators" : [ {
-          "from" : {
-            "key_code" : "left_control",
-            "modifiers" : {
-              "optional" : [ "any" ]
-            }
-          },
-          "to" : [ {
-            "key_code" : "fn"
-          } ],
-          "type" : "basic"
-        } ]
-      }, {
         "description" : "right_command",
         "manipulators" : [ {
           "from" : {
@@ -210,8 +182,7 @@
             }
           },
           "to" : [ {
-            "key_code" : "fn",
-            "modifiers" : [ "left_option" ]
+            "key_code" : "left_control"
           } ],
           "type" : "basic"
         } ]
@@ -225,21 +196,23 @@
             }
           },
           "to" : [ {
-            "key_code" : "left_option"
+            "key_code" : "fn",
+            "modifiers" : [ "left_option" ]
           } ],
           "type" : "basic"
         } ]
       }, {
-        "description" : "right_shift",
+        "description" : "new underscore",
         "manipulators" : [ {
           "from" : {
-            "key_code" : "right_shift",
+            "key_code" : "k",
             "modifiers" : {
-              "optional" : [ "any" ]
+              "mandatory" : [ "left_control" ]
             }
           },
           "to" : [ {
-            "key_code" : "left_control"
+            "key_code" : "hyphen",
+            "modifiers" : [ "left_shift" ]
           } ],
           "type" : "basic"
         } ]

@@ -1,10 +1,12 @@
 {:main [
   {:des "caps_lock" :rules [[:##caps_lock :escape]]}
-  {:des "fn" :rules [[:##fn :left_control]]}
-  {:des "left_control" :rules [[:##left_control :fn]]}
-  {:des "right_command" :rules [[:##right_command :!Ofn]]}
-  {:des "right_option" :rules [[:##right_option :left_option]]}
-  {:des "right_shift" :rules [[:##right_shift :left_control]]}
+  ; {:des "fn" :rules [[:##fn :left_control]]}
+  ; {:des "left_control" :rules [[:##left_control :left_option]]}
+  ; {:des "left_option" :rules [[:##left_option :left_control]]}
+  {:des "right_command" :rules [[:##right_command :left_control]]}
+  {:des "right_option" :rules [[:##right_option :!Ofn]]}
+  ; {:des "right_shift" :rules [[:##right_shift :left_control]]}
+  {:des "new underscore" :rules [[:!Tk :!Shyphen]]}
 ]}
 
 ;; C  | left_command
