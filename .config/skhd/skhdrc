@@ -189,13 +189,13 @@ alt + fn + ctrl - l: yabai -m window --warp east
 
 alt + fn - 0x2B: yabai -m window --focus stack.prev
 alt + fn - 0x2F: yabai -m window --focus stack.next
+alt + fn - r: yabai -m window --focus stack.recent
 # alt + fn - f: yabai -m window --focus stack.first
 # alt + fn - g: yabai -m window --focus stack.last
 
 # fast focus desktop
 alt + fn - p : yabai -m space --focus prev
 alt + fn - n : yabai -m space --focus next
-alt + fn - r : yabai -m space --focus recent
 alt + fn - u : yabai -m space --focus recent
 alt + fn - m : yabai -m space --focus recent
 alt + fn - space : yabai -m space --focus recent
