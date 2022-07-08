@@ -975,7 +975,7 @@ key_bindings:
   - { key: O, mods: Command, chars: "\x08\x0F"  }
   - { key: P, mods: Command, chars: "\x08\x70"  }
   - { key: Slash, mods: Command, chars: "\x08\x5b\x1b\x3f"  }
-  - { key: E, mods: Command, chars: "\x05"  }
+  - { key: E, mods: Command, chars: "\x09"  }
   - { key: F10, mods: Command, chars: "if self.env.context['active'] == '': import pudb;pudb.set_trace()"  }
   - { key: F11, mods: Command, chars: "if True: import pudb;pudb.set_trace()"  }
   - { key: F12, mods: Command, chars: "import pudb;pudb.set_trace()"  }
