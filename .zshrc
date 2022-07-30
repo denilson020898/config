@@ -7,6 +7,8 @@ bindkey "^[[1;3D" backward-word
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;4D" beginning-of-line
 bindkey "^[[1;4C" end-of-line
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
 
 alias db='(savestatus=$?; $HOME/s/donebeep $savestatus "$@"; exit $savestatus)'
 
@@ -30,6 +32,7 @@ alias z='cd'
 
 alias ".."="cd .."
 alias "cd.."="cd .."
+alias "ca"="conda activate"
 
 alias 'pd'='pushd'
 alias 'dp'='popd'
@@ -41,6 +44,7 @@ alias zp='nvim ~/.profile'
 
 alias zr='source ~/.zshrc'
 alias zc='nvim ~/d/odoo.conf'
+alias zx='nvim ~/d/odoo-temp.conf'
 
 alias gpro='git pull --rebase origin'
 alias gmc='glab mr create -f -a denilson.mplus'
@@ -62,14 +66,14 @@ alias po='python -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c ~/d/odo
 alias so='~/d/odoo/odoo-bin shell -c ~/d/odoo.conf'
 alias bo='~/d/odoo/odoo-bin'
 
-alias to='~/d/odoo/odoo-bin -c ~/d/odoo-temp.conf'
-alias top='~/d/odoo/odoo-bin -c ~/d/odoo-temp.conf --dev reload,pdb'
-alias tod='~/d/odoo/odoo-bin -c ~/d/odoo-temp.conf --dev reload,xml'
-alias tox='~/d/odoo/odoo-bin -c ~/d/odoo-temp.conf --dev xml,qweb'
-alias toda='~/d/odoo/odoo-bin -c ~/d/odoo-temp.conf --dev all'
-alias tpo='python -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c ~/d/odoo-temp.conf'
-alias tso='~/d/odoo/odoo-bin shell -c ~/d/odoo-temp.conf'
-alias tbo='~/d/odoo/odoo-bin'
+alias to='~/d/odoo_temp/odoo-bin -c ~/d/odoo-temp.conf'
+alias top='~/d/odoo_temp/odoo-bin -c ~/d/odoo-temp.conf --dev reload,pdb'
+alias tod='~/d/odoo_temp/odoo-bin -c ~/d/odoo-temp.conf --dev reload,xml'
+alias tox='~/d/odoo_temp/odoo-bin -c ~/d/odoo-temp.conf --dev xml,qweb'
+alias toda='~/d/odoo_temp/odoo-bin -c ~/d/odoo-temp.conf --dev all'
+alias tpo='python -m debugpy --listen localhost:5678 ~/d/odoo_temp/odoo-bin -c ~/d/odoo-temp.conf'
+alias tso='~/d/odoo_temp/odoo-bin shell -c ~/d/odoo-temp.conf'
+alias tbo='~/d/odoo_temp/odoo-bin'
 
 alias t='tmux'
 alias ta='tmux a'
@@ -77,6 +81,9 @@ alias ta='tmux a'
 alias ty='tty'
 alias tp='perl -MPOSIX -e pause'
 # Set breakpoint() in Python to call pudb
+# alias zpp='export PYTHONBREAKPOINT="pudb.set_trace"'
+# alias zpu='export PYTHONBREAKPOINT=""'
+# alias zpo='echo $PYTHONBREAKPOINT'
 export PYTHONBREAKPOINT="pudb.set_trace"
 
 eval "$(starship init zsh)"
@@ -102,13 +109,19 @@ export PATH="$HOME/neovim/bin:$PATH"
 export PATH="$HOME/d/git-cola/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
 # export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
-
 # export PATH="$HOME/.local/share/nvim/lsp_servers/rust:$PATH"
 source "$HOME/.cargo/env"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PSQL_PAGER="pspg --interactive -s=19"
+export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/adapter/:$PATH"
+export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/lldb/bin/:$PATH"
+
+eval "$(zoxide init zsh)"
 
 
 # >>> conda initialize >>>
@@ -126,9 +139,3 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-export PSQL_PAGER="pspg --interactive -s=19"
-export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/adapter/:$PATH"
-export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/lldb/bin/:$PATH"
-
-eval "$(zoxide init zsh)"
