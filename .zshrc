@@ -81,9 +81,9 @@ alias ta='tmux a'
 alias ty='tty'
 alias tp='perl -MPOSIX -e pause'
 # Set breakpoint() in Python to call pudb
-# alias zpp='export PYTHONBREAKPOINT="pudb.set_trace"'
-# alias zpu='export PYTHONBREAKPOINT=""'
-# alias zpo='echo $PYTHONBREAKPOINT'
+alias zpp='export PYTHONBREAKPOINT="pudb.set_trace"'
+alias zpu='export PYTHONBREAKPOINT=""'
+alias zpo='echo $PYTHONBREAKPOINT'
 export PYTHONBREAKPOINT="pudb.set_trace"
 
 eval "$(starship init zsh)"
@@ -138,4 +138,4 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
+setopt globstarshort
