@@ -40,7 +40,6 @@ alias 'dp'='popd'
 alias zd='cd ~/.config/nvim/'
 alias zg='nvim ~/.gitconfig'
 alias zz='nvim ~/.zshrc'
-alias zp='nvim ~/.profile'
 
 alias zr='source ~/.zshrc'
 alias zc='nvim ~/d/odoo.conf'
@@ -52,6 +51,7 @@ alias gmc='glab mr create -f -a denilson.mplus'
 # alias glar='glab mr create --remove-source-branch -f -a denilson.mplus -b development -s'
 
 alias zp='rm -r ~/.local/share/nvim/sessions'
+alias nv='neovide --notabs --maximized'
 
 alias spg='sudo service postgresql start'
 alias sap='sudo service apache2 start'
@@ -120,6 +120,8 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export PSQL_PAGER="pspg --interactive -s=19"
 export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/adapter/:$PATH"
 export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/lldb/bin/:$PATH"
+
+# export NEOVIDE_MULTIGRID=""
 
 eval "$(zoxide init zsh)"
 
