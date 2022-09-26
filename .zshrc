@@ -84,7 +84,7 @@ alias tp='perl -MPOSIX -e pause'
 alias zpp='export PYTHONBREAKPOINT="pudb.set_trace"'
 alias zpu='export PYTHONBREAKPOINT=""'
 alias zpo='echo $PYTHONBREAKPOINT'
-export PYTHONBREAKPOINT="pudb.set_trace"
+# export PYTHONBREAKPOINT="pudb.set_trace"
 
 eval "$(starship init zsh)"
 
@@ -113,7 +113,7 @@ export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
 source "$HOME/.cargo/env"
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
@@ -141,3 +141,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 setopt globstarshort
+export PATH=~/.local/bin:"$PATH"
