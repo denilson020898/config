@@ -51,7 +51,7 @@ alias gmc='glab mr create -f -a denilson.mplus'
 # alias glar='glab mr create --remove-source-branch -f -a denilson.mplus -b development -s'
 
 alias zp='rm -r ~/.local/share/nvim/sessions'
-alias nv='neovide --notabs --maximized'
+alias nv='neovide --notabs --maximized --frame none'
 
 alias spg='sudo service postgresql start'
 alias sap='sudo service apache2 start'
@@ -84,7 +84,7 @@ alias tp='perl -MPOSIX -e pause'
 alias zpp='export PYTHONBREAKPOINT="pudb.set_trace"'
 alias zpu='export PYTHONBREAKPOINT=""'
 alias zpo='echo $PYTHONBREAKPOINT'
-# export PYTHONBREAKPOINT="pudb.set_trace"
+export PYTHONBREAKPOINT="pudb.set_trace"
 
 eval "$(starship init zsh)"
 
