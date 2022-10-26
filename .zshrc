@@ -15,6 +15,7 @@ alias db='(savestatus=$?; $HOME/s/donebeep $savestatus "$@"; exit $savestatus)'
 # some more ls aliases
 # alias code='codium'
 
+alias py='python'
 alias gs='git status'
 alias gl='git log --oneline --graph --decorate --max-count=10'
 alias ga='git add -A'
