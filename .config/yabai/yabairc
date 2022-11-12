@@ -51,7 +51,7 @@ yabai -m config mouse_action2 resize
 
 yabai -m rule --add app="^(Music|Spotify|Amazon Music|Code)$" space=1
 yabai -m rule --add app="^(Brave Browser)$" space=2
-yabai -m rule --add app="^(Alacritty|Neovide)$" space=3
+yabai -m rule --add app="^(WezTerm|Alacritty|Neovide)$" space=3
 yabai -m rule --add app="^(Docker Desktop|Firefox|Google Chrome)$" space=4
 yabai -m rule --add app="^(Calendar|Slack|Mail|Microsoft OneNote)$" space=5
 

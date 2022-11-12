@@ -122,12 +122,12 @@ font:
     # Default:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
-    #   - (Windows) Consolas
+      # - (Windows) Consolas
     # family: LiterationMono Nerd Font
     # family: JetBrainsMono Nerd Font
     # family: Hack Nerd Font
-    family: VictorMono Nerd Font
-    # family: Iosevka Nerd Font
+    # family: VictorMono Nerd Font
+    family: Iosevka Nerd Font
 
     # The `style` can be specified to pick a specific face.
     # style: Retina
@@ -187,7 +187,7 @@ font:
     # style: Light Italic
 
   # Point size
-  size: 11
+  size: 10
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -1033,7 +1033,7 @@ key_bindings:
 #     cyan: '0x8ec07c'
 #     white: '0xebdbb2'
 
-# gruvbox Alacritty Colors
+# # gruvbox Alacritty Colors
 colors:
   # Default colors
   primary:
@@ -1099,3 +1099,47 @@ colors:
 #     magenta: '0xfbdaff'
 #     cyan:    '0x1ab2a8'
 #     white:   '0xffffff'
+#
+
+# Base16 Zenburn 256 - alacritty color config
+# elnawe
+# colors:
+#   # Default colors
+#   primary:
+#     background: '0x383838'
+#     foreground: '0xdcdccc'
+#
+#   # Colors the cursor will use if `custom_cursor_colors` is true
+#   cursor:
+#     text: '0x383838'
+#     cursor: '0xdcdccc'
+#
+#   # Normal colors
+#   normal:
+#     black:   '0x383838'
+#     red:     '0xdca3a3'
+#     green:   '0x5f7f5f'
+#     yellow:  '0xe0cf9f'
+#     blue:    '0x7cb8bb'
+#     magenta: '0xdc8cc3'
+#     cyan:    '0x93e0e3'
+#     white:   '0xdcdccc'
+#
+#   # Bright colors
+#   bright:
+#     black:   '0x6f6f6f'
+#     red:     '0xdca3a3'
+#     green:   '0x5f7f5f'
+#     yellow:  '0xe0cf9f'
+#     blue:    '0x7cb8bb'
+#     magenta: '0xdc8cc3'
+#     cyan:    '0x93e0e3'
+#     white:   '0xffffff'
+#
+#   indexed_colors:
+#     - { index: 16, color: '0xdfaf8f' }
+#     - { index: 17, color: '0x000000' }
+#     - { index: 18, color: '0x404040' }
+#     - { index: 19, color: '0x606060' }
+#     - { index: 20, color: '0x808080' }
+#     - { index: 21, color: '0xc0c0c0' }

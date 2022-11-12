@@ -10,18 +10,6 @@ bindkey "^[[1;4C" end-of-line
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
-alias db='(savestatus=$?; $HOME/s/donebeep $savestatus "$@"; exit $savestatus)'
-
-# some more ls aliases
-# alias code='codium'
-
-alias py='python'
-alias gs='git status'
-alias gl='git log --oneline --graph --decorate --max-count=10'
-alias ga='git add -A'
-alias gc='git commit -m '
-alias gu='gitui'
-
 alias ll='ls -alh'
 alias la='ls -a'
 alias l='ls -cf'
@@ -29,7 +17,10 @@ alias e='exa -Fh --icons'
 alias ee='exa -laFh --icons'
 alias ea='exa -lFh --icons'
 alias et='exa -laFh --icons -T -L'
-alias z='cd'
+
+alias wz='wezterm'
+alias wsh='wezterm ssh'
+alias wi='wezterm imgcat'
 
 alias ".."="cd .."
 alias "cd.."="cd .."
@@ -46,13 +37,7 @@ alias zr='source ~/.zshrc'
 alias zc='nvim ~/d/odoo.conf'
 alias zx='nvim ~/d/odoo-temp.conf'
 
-alias gpro='git pull --rebase origin'
-alias gmc='glab mr create -f -a denilson.mplus'
-# alias gla='glab mr create -f -a denilson.mplus -b development -s'
-# alias glar='glab mr create --remove-source-branch -f -a denilson.mplus -b development -s'
-
 alias zp='rm -r ~/.local/share/nvim/sessions'
-alias nv='neovide --notabs --maximized --frame none'
 
 alias spg='sudo service postgresql start'
 alias sap='sudo service apache2 start'
@@ -89,9 +74,9 @@ export PYTHONBREAKPOINT="pudb.set_trace"
 
 eval "$(starship init zsh)"
 
-if [[ ! $(tmux list-sessions) ]]; then
-  tmux
-fi
+# if [[ ! $(tmux list-sessions) ]]; then
+#   tmux
+# fi
 
 LIGHT_COLOR='gruvbox_light.yaml'
 DARK_COLOR='gruvbox_dark.yaml'
@@ -109,8 +94,6 @@ export PATH="$HOME/.local/share/nvim/lsp_servers/rust:$PATH"
 export PATH="$HOME/neovim/bin:$PATH"
 export PATH="$HOME/d/git-cola/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
-# export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
-# export PATH="$HOME/.local/share/nvim/lsp_servers/rust:$PATH"
 source "$HOME/.cargo/env"
 
 export NVM_DIR="$HOME/.nvm"
@@ -122,10 +105,7 @@ export PSQL_PAGER="pspg --interactive -s=19"
 export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/adapter/:$PATH"
 export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/lldb/bin/:$PATH"
 
-# export NEOVIDE_MULTIGRID=""
-
-eval "$(zoxide init zsh)"
-
+# eval "$(zoxide init zsh)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -141,5 +121,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
 setopt globstarshort
 export PATH=~/.local/bin:"$PATH"
