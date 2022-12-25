@@ -13,10 +13,17 @@ bindkey "^[[1;5D" backward-word
 alias ll='ls -alh'
 alias la='ls -a'
 alias l='ls -cf'
-alias e='exa -Fh --icons'
-alias ee='exa -laFh --icons'
-alias ea='exa -lFh --icons'
-alias et='exa -laFh --icons -T -L'
+# alias e='exa -Fh --icons'
+# alias ee='exa -laFh --icons'
+# alias ea='exa -lFh --icons'
+# alias et='exa -laFh --icons -T -L'
+alias e='exa -Fh -s type'
+alias ee='exa -laFh -s type'
+alias ea='exa -lFh -s type'
+alias et='exa -laFh -T -L -s type'
+
+alias b='bat'
+alias rr='say never gonna give you up, never gonna let you down'
 
 alias wz='wezterm'
 alias wsh='wezterm ssh'
@@ -29,37 +36,43 @@ alias "ca"="conda activate"
 alias 'pd'='pushd'
 alias 'dp'='popd'
 
+alias n='nvim'
 alias zd='cd ~/.config/nvim/'
 alias zg='nvim ~/.gitconfig'
 alias zz='nvim ~/.zshrc'
 
 alias zr='source ~/.zshrc'
-alias zc='nvim ~/d/odoo.conf'
-alias zx='nvim ~/d/odoo-temp.conf'
+alias zc='nvim ~/d/local_docker/odoo.conf'
+alias zx='nvim ~/d/local_docker/odoo-temp.conf'
 
 alias zp='rm -r ~/.local/share/nvim/sessions'
+alias zl='pushd /Users/son/d/local_docker'
+alias zn='source ~/.nvm/nvm.sh'
 
 alias spg='sudo service postgresql start'
 alias sap='sudo service apache2 start'
 alias sms='sudo service mysql start'
 
-alias o='~/d/odoo/odoo-bin -c ~/d/odoo.conf'
-alias op='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev reload,pdb'
-alias od='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev reload,xml'
-alias ox='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev xml,qweb'
-alias oda='~/d/odoo/odoo-bin -c ~/d/odoo.conf --dev all'
-alias po='python -m debugpy --listen localhost:5678 ~/d/odoo/odoo-bin -c ~/d/odoo.conf'
-alias so='~/d/odoo/odoo-bin shell -c ~/d/odoo.conf'
-alias bo='~/d/odoo/odoo-bin'
+alias o='~/d/local_docker/odoo/odoo-bin -c ~/d/local_docker/odoo.conf'
+alias op='~/d/local_docker/odoo/odoo-bin -c ~/d/local_docker/odoo.conf --dev reload,pdb'
+alias od='~/d/local_docker/odoo/odoo-bin -c ~/d/local_docker/odoo.conf --dev reload,xml'
+alias ox='~/d/local_docker/odoo/odoo-bin -c ~/d/local_docker/odoo.conf --dev xml,qweb'
+alias oda='~/d/local_docker/odoo/odoo-bin -c ~/d/local_docker/odoo.conf --dev all'
+alias po='python -m debugpy --listen localhost:5678 ~/d/local_docker/odoo/odoo-bin -c ~/d/local_docker/odoo.conf'
+alias pod='python -m debugpy --listen localhost:5678 ~/d/local_docker/odoo/odoo-bin -c ~/d/local_docker/odoo.conf --dev reload,pdb'
+alias so='~/d/local_docker/odoo/odoo-bin shell -c ~/d/local_docker/odoo.conf'
+alias bo='~/d/local_docker/odoo/odoo-bin'
 
-alias to='~/d/odoo_temp/odoo-bin -c ~/d/odoo-temp.conf'
-alias top='~/d/odoo_temp/odoo-bin -c ~/d/odoo-temp.conf --dev reload,pdb'
-alias tod='~/d/odoo_temp/odoo-bin -c ~/d/odoo-temp.conf --dev reload,xml'
-alias tox='~/d/odoo_temp/odoo-bin -c ~/d/odoo-temp.conf --dev xml,qweb'
-alias toda='~/d/odoo_temp/odoo-bin -c ~/d/odoo-temp.conf --dev all'
-alias tpo='python -m debugpy --listen localhost:5678 ~/d/odoo_temp/odoo-bin -c ~/d/odoo-temp.conf'
-alias tso='~/d/odoo_temp/odoo-bin shell -c ~/d/odoo-temp.conf'
-alias tbo='~/d/odoo_temp/odoo-bin'
+alias to='~/d/local_docker/odoo_temp/odoo-bin -c ~/d/local_docker/odoo-temp.conf'
+alias top='~/d/local_docker/odoo_temp/odoo-bin -c ~/d/local_docker/odoo-temp.conf --dev reload,pdb'
+alias tod='~/d/local_docker/odoo_temp/odoo-bin -c ~/d/local_docker/odoo-temp.conf --dev reload,xml'
+alias tox='~/d/local_docker/odoo_temp/odoo-bin -c ~/d/local_docker/odoo-temp.conf --dev xml,qweb'
+alias toda='~/d/local_docker/odoo_temp/odoo-bin -c ~/d/local_docker/odoo-temp.conf --dev all'
+alias tpo='python -m debugpy --listen localhost:5678 ~/d/local_docker/odoo_temp/odoo-bin -c ~/d/local_docker/odoo-temp.conf'
+alias tso='~/d/local_docker/odoo_temp/odoo-bin shell -c ~/d/local_docker/odoo-temp.conf'
+alias tbo='~/d/local_docker/odoo_temp/odoo-bin'
+
+alias pgd='psql -U son -h localhost -p 6543'
 
 alias t='tmux'
 alias ta='tmux a'
@@ -73,6 +86,7 @@ alias zpo='echo $PYTHONBREAKPOINT'
 export PYTHONBREAKPOINT="pudb.set_trace"
 
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 # if [[ ! $(tmux list-sessions) ]]; then
 #   tmux
@@ -85,14 +99,14 @@ alias day="alacritty-colorscheme -V apply $LIGHT_COLOR"
 alias night="alacritty-colorscheme -V apply $DARK_COLOR"
 alias toggle="alacritty-colorscheme -V toggle $LIGHT_COLOR $DARK_COLOR"
 
-export PYTHONPATH="$HOME/d/odoo:$PYTHONPATH"
+export PYTHONPATH="$HOME/d/local_docker/odoo:$PYTHONPATH"
+export PYTHONPATH="$HOME/d/repo_airflow:$PYTHONPATH"
 
 export EDITOR="nvim"
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/share/nvim/lsp_servers/rust:$PATH"
 export PATH="$HOME/neovim/bin:$PATH"
-export PATH="$HOME/d/git-cola/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
 source "$HOME/.cargo/env"
 

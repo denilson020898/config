@@ -49,10 +49,10 @@ yabai -m config mouse_modifier ctrl
 yabai -m config mouse_action1 move
 yabai -m config mouse_action2 resize
 
-yabai -m rule --add app="^(Music|Spotify|Amazon Music|Code)$" space=1
-yabai -m rule --add app="^(Brave Browser)$" space=2
-yabai -m rule --add app="^(WezTerm|Alacritty|Neovide)$" space=3
-yabai -m rule --add app="^(Docker Desktop|Firefox|Google Chrome)$" space=4
+yabai -m rule --add app="^(Music|Spotify|Amazon Music)$" space=1
+yabai -m rule --add app="^(Brave Browser|Firefox)$" space=2
+yabai -m rule --add app="^(Code|WezTerm|Alacritty|Neovide)$" space=3
+yabai -m rule --add app="^(Docker Desktop|Google Chrome)$" space=4
 yabai -m rule --add app="^(Calendar|Slack|Mail|Microsoft OneNote)$" space=5
 
 yabai -m rule --add app="^(System Preferences|Activity Monitor)$" manage=off

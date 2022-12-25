@@ -13,9 +13,21 @@ end)
 return {
   window_decorations = "RESIZE",
   -- font = wezterm.font 'LiterationMono Nerd Font',
-  font = wezterm.font 'CaskaydiaCove Nerd Font',
-  -- font = wezterm.font 'Iosevka Nerd Font',
+  -- font = wezterm.font 'CaskaydiaCove Nerd Font',
+  font = wezterm.font 'Iosevka Nerd Font',
+  -- font = wezterm.font 'Hack Nerd Font',
+  -- font = wezterm.font 'VictorMono Nerd Font',
+  -- font = wezterm.font 'FiraCode Nerd Font',
+  -- font = wezterm.font 'Inconsolata Nerd Font',
   color_scheme = 'Gruvbox Dark',
+  -- color_scheme = 'Catppuccin Macchiato',
+  -- color_scheme = 'Glacier',
+  -- color_schemes = {
+  --   ['Gruvbuddy Scheme'] = {
+  --     background = 'red',
+  --   },
+  -- },
+  -- window_background_opacity = 0.95,
   leader = { key = 'Space', mods = 'CTRL|SHIFT' },
   scrollback_lines = 3500,
   enable_scroll_bar = true,
@@ -37,9 +49,19 @@ return {
       action = wezterm.action.CloseCurrentTab { confirm = true },
     },
     {
+      key = 'w',
+      mods = 'CMD|SHIFT',
+      action = wezterm.action.CloseCurrentTab { confirm = false },
+    },
+    {
       key = 'e',
       mods = 'CMD',
       action = wezterm.action.CloseCurrentPane { confirm = true },
+    },
+    {
+      key = 'e',
+      mods = 'CMD|SHIFT',
+      action = wezterm.action.CloseCurrentPane { confirm = false },
     },
     {
       key = 'p',

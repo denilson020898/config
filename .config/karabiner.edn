@@ -5,7 +5,10 @@
   {:des "fn" :rules [[:##fn :left_control]]}
   ; {:des "left_control" :rules [[:##left_control :left_option]]}
   ; {:des "left_option" :rules [[:##left_option :left_control]]}
-  {:des "right_option" :rules [[:##right_option :left_option]]}
+  ; {:des "right_option" :rules [[:##right_option :left_option]]}
+
+  {:des "right_option" :rules [[:##right_option :!Odelete_or_backspace]]}
+
   {:des "right_command" :rules [[:##right_command :!Ofn]]}
   {:des "desktops" :rules [[:!OFleft_command :!Tup_arrow]]}
   ; {:des "period mode"
