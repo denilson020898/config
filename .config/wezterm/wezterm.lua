@@ -12,15 +12,16 @@ end)
 
 return {
   window_decorations = "RESIZE",
-  -- font = wezterm.font 'LiterationMono Nerd Font',
+  font = wezterm.font 'LiterationMono Nerd Font',
   -- font = wezterm.font 'CaskaydiaCove Nerd Font',
-  font = wezterm.font 'Iosevka Nerd Font',
+  -- font = wezterm.font 'Iosevka Nerd Font',
   -- font = wezterm.font 'Hack Nerd Font',
   -- font = wezterm.font 'VictorMono Nerd Font',
   -- font = wezterm.font 'FiraCode Nerd Font',
   -- font = wezterm.font 'Inconsolata Nerd Font',
-  color_scheme = 'Gruvbox Dark',
-  -- color_scheme = 'Catppuccin Macchiato',
+  -- color_scheme = 'mellow',
+  -- color_scheme = 'Gruvbox Dark',
+  color_scheme = 'Catppuccin Mocha',
   -- color_scheme = 'Glacier',
   -- color_schemes = {
   --   ['Gruvbuddy Scheme'] = {
