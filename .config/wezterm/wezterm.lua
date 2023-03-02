@@ -20,15 +20,15 @@ return {
   -- font = wezterm.font 'FiraCode Nerd Font',
   -- font = wezterm.font 'Inconsolata Nerd Font',
   -- color_scheme = 'mellow',
-  -- color_scheme = 'Gruvbox Dark',
-  color_scheme = 'Catppuccin Mocha',
+  color_scheme = 'Gruvbox Dark',
+  -- color_scheme = 'Catppuccin Mocha',
   -- color_scheme = 'Glacier',
   -- color_schemes = {
   --   ['Gruvbuddy Scheme'] = {
   --     background = 'red',
   --   },
   -- },
-  -- window_background_opacity = 0.95,
+  window_background_opacity = 0.96,
   leader = { key = 'Space', mods = 'CTRL|SHIFT' },
   scrollback_lines = 3500,
   enable_scroll_bar = true,

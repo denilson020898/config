@@ -16,5 +16,7 @@
     editor = nvim
 	excludesfile = ~/.gitignore_global
 
-[credential]
-	helper = osxkeychain
+; [credential]
+; 	helper = osxkeychain
+[pull]
+	rebase = true
