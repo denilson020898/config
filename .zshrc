@@ -36,7 +36,11 @@ alias "ca"="conda activate"
 alias 'pd'='pushd'
 alias 'dp'='popd'
 
-alias n='nvim'
+alias nv='nvim'
+# alias n='neovide --maximized --frame none'
+# alias n='neovide --frame buttonless'
+# alias n='neovide --frame none'
+alias n='/Applications/Neovide.app/Contents/MacOS/neovide --frame buttonless'
 alias zd='cd ~/.config/nvim/'
 alias zg='nvim ~/.gitconfig'
 alias zz='nvim ~/.zshrc'
@@ -121,6 +125,7 @@ export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/lldb/bin/:$
 
 # eval "$(zoxide init zsh)"
 
+CONDA_CHANGEPS1=no
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/son/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"

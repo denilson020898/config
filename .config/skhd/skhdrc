@@ -148,7 +148,8 @@
 #           yabai -m window --toggle pip
 
 # Reload yabai
-alt + fn - 0 : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+# alt + fn - 0 : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
+alt + fn - 0 : brew services restart yabai; brew services restart skhd
 
 alt + fn - b : yabai -m space --layout bsp
 alt + fn - v : yabai -m space --layout stack
@@ -210,6 +211,10 @@ alt + fn - 8 : yabai -m space --focus 8
 alt + fn - 9 : yabai -m space --focus 9
 # alt + fn - 0 : yabai -m space --focus 10
 
+# fn - 1 : yabai -m window --space  1
+# fn - 2 : yabai -m window --space  2
+# fn - 3 : yabai -m window --space  3
+# fn - 4 : yabai -m window --space  4
 alt + fn + shift - 1 : yabai -m window --space  1
 alt + fn + shift - 2 : yabai -m window --space  2
 alt + fn + shift - 3 : yabai -m window --space  3
