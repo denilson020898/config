@@ -30,7 +30,7 @@ yabai -m config window_border_width          1
 yabai -m config active_window_border_color   0xffaa5555
 yabai -m config normal_window_border_color   0xff5555aa
 yabai -m config insert_feedback_color        0xffd75f5f
-yabai -m config split_ratio                  0.55
+yabai -m config split_ratio                  0.5
 yabai -m config auto_balance                 off
 yabai -m config mouse_modifier               fn
 yabai -m config mouse_action1                move
@@ -43,18 +43,18 @@ yabai -m config top_padding                  0
 yabai -m config bottom_padding               0
 yabai -m config left_padding                 0
 yabai -m config right_padding                0
-yabai -m config window_gap                   0
+yabai -m config window_gap                   1
 
 yabai -m config mouse_modifier ctrl
 yabai -m config mouse_action1 move
 yabai -m config mouse_action2 resize
 
-yabai -m rule --add app="^(Music|Spotify|Amazon Music)$" space=1
-yabai -m rule --add app="^(Neovide|neovide)$" space=4
-yabai -m rule --add app="^(Brave Browser|Firefox)$" space=2
-yabai -m rule --add app="^(Code|WezTerm|Alacritty)$" space=3
-yabai -m rule --add app="^(Docker Desktop|Google Chrome)$" space=5
-yabai -m rule --add app="^(Calendar|Slack|Mail|Microsoft OneNote)$" space=6
+yabai -m rule --add app="^(Docker Desktop|Calendar|Slack|Mail|Microsoft OneNote)$" space=6
+yabai -m rule --add app="^(Code)$" space=2
+yabai -m rule --add app="^(WezTerm|Alacritty|Neovide|neovide)$" space=3
+yabai -m rule --add app="^(Firefox|Google Chrome)$" space=1
+yabai -m rule --add app="^(Brave Browser|Firefox|Google Chrome)$" space=4
+yabai -m rule --add app="^(Music|Spotify|Amazon Music)$" space=5
 
 yabai -m rule --add app="^(System Preferences|Activity Monitor)$" manage=off
 

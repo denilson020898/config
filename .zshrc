@@ -1,4 +1,5 @@
 # Created by newuser for 5.8
+set -o emacs
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias ff='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
@@ -36,11 +37,10 @@ alias "ca"="conda activate"
 alias 'pd'='pushd'
 alias 'dp'='popd'
 
-alias nv='nvim'
-# alias n='neovide --maximized --frame none'
-# alias n='neovide --frame buttonless'
-# alias n='neovide --frame none'
-alias n='/Applications/Neovide.app/Contents/MacOS/neovide --frame buttonless'
+alias c='code'
+alias n='nvim'
+alias nn='/Applications/Neovide.app/Contents/MacOS/neovide --frame buttonless --multigrid'
+alias nv='/Applications/Neovide.app/Contents/MacOS/neovide --frame buttonless'
 alias zd='cd ~/.config/nvim/'
 alias zg='nvim ~/.gitconfig'
 alias zz='nvim ~/.zshrc'
@@ -64,10 +64,22 @@ alias ox='~/d/local_docker/odoo/odoo-bin -c ~/d/local_docker/odoo.conf --dev rel
 alias oda='~/d/local_docker/odoo/odoo-bin -c ~/d/local_docker/odoo.conf --dev all'
 alias po='python -m debugpy --listen localhost:5678 ~/d/local_docker/odoo/odoo-bin -c ~/d/local_docker/odoo.conf'
 alias pod='python -m debugpy --listen localhost:5678 ~/d/local_docker/odoo/odoo-bin -c ~/d/local_docker/odoo.conf --dev reload,pdb'
+alias pox='python -m debugpy --listen localhost:5678 ~/d/local_docker/odoo/odoo-bin -c ~/d/local_docker/odoo.conf --dev reload,pdb,qweb'
 alias so='~/d/local_docker/odoo/odoo-bin shell -c ~/d/local_docker/odoo.conf'
 alias bo='~/d/local_docker/odoo/odoo-bin'
 
-alias to='~/d/local_docker/odoo_temp/odoo-bin -c ~/d/local_docker/odoo-temp.conf'
+alias o14='~/d/local_docker/odoo14/odoo-bin -c ~/d/local_docker/odoo.conf'
+alias op14='~/d/local_docker/odoo14/odoo-bin -c ~/d/local_docker/odoo.conf --dev reload,pdb'
+alias od14='~/d/local_docker/odoo14/odoo-bin -c ~/d/local_docker/odoo.conf --dev reload,xml'
+alias ox14='~/d/local_docker/odoo14/odoo-bin -c ~/d/local_docker/odoo.conf --dev reload,xml,qweb'
+alias oda14='~/d/local_docker/odoo14/odoo-bin -c ~/d/local_docker/odoo.conf --dev all'
+alias po14='python -m debugpy --listen localhost:5678 ~/d/local_docker/odoo14/odoo-bin -c ~/d/local_docker/odoo.conf'
+alias pod14='python -m debugpy --listen localhost:5678 ~/d/local_docker/odoo14/odoo-bin -c ~/d/local_docker/odoo.conf --dev reload,pdb'
+alias pox14='python -m debugpy --listen localhost:5678 ~/d/local_docker/odoo14/odoo-bin -c ~/d/local_docker/odoo.conf --dev reload,pdb,qweb'
+alias so14='~/d/local_docker/odoo14/odoo-bin shell -c ~/d/local_docker/odoo.conf'
+alias bo14='~/d/local_docker/odoo14/odoo-bin'
+
+alias to='~/d/local_docker/odoo16/odoo-bin -c ~/d/local_docker/odoo-temp.conf'
 alias top='~/d/local_docker/odoo_temp/odoo-bin -c ~/d/local_docker/odoo-temp.conf --dev reload,pdb'
 alias tod='~/d/local_docker/odoo_temp/odoo-bin -c ~/d/local_docker/odoo-temp.conf --dev reload,xml'
 alias tox='~/d/local_docker/odoo_temp/odoo-bin -c ~/d/local_docker/odoo-temp.conf --dev xml,qweb'
@@ -92,10 +104,6 @@ export PYTHONBREAKPOINT="pudb.set_trace"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-# if [[ ! $(tmux list-sessions) ]]; then
-#   tmux
-# fi
-
 LIGHT_COLOR='gruvbox_light.yaml'
 DARK_COLOR='gruvbox_dark.yaml'
 
@@ -118,12 +126,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export PSQL_PAGER="pspg --interactive -s=19"
-export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/adapter/:$PATH"
-export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/lldb/bin/:$PATH"
-
-# eval "$(zoxide init zsh)"
+export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.9.0/adapter/:$PATH"
+export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.9.0/lldb/bin/:$PATH"
 
 CONDA_CHANGEPS1=no
 # >>> conda initialize >>>
@@ -143,3 +150,5 @@ unset __conda_setup
 
 setopt globstarshort
 export PATH=~/.local/bin:"$PATH"
+
+ulimit -n 12288
