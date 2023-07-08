@@ -1,3 +1,5 @@
+# zmodload zsh/zprof
+
 # Created by newuser for 5.8
 set -o emacs
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
@@ -14,10 +16,6 @@ bindkey "^[[1;5D" backward-word
 alias ll='ls -alh'
 alias la='ls -a'
 alias l='ls -cf'
-# alias e='exa -Fh --icons'
-# alias ee='exa -laFh --icons'
-# alias ea='exa -lFh --icons'
-# alias et='exa -laFh --icons -T -L'
 alias e='exa -Fh -s type'
 alias ee='exa -laFh -s type'
 alias ea='exa -lFh -s type'
@@ -79,6 +77,17 @@ alias pox14='python -m debugpy --listen localhost:5678 ~/d/local_docker/odoo14/o
 alias so14='~/d/local_docker/odoo14/odoo-bin shell -c ~/d/local_docker/odoo.conf'
 alias bo14='~/d/local_docker/odoo14/odoo-bin'
 
+alias o15='~/d/local_docker/odoo15/odoo-bin -c ~/d/local_docker/odoo.conf'
+alias op15='~/d/local_docker/odoo15/odoo-bin -c ~/d/local_docker/odoo.conf --dev reload,pdb'
+alias od15='~/d/local_docker/odoo15/odoo-bin -c ~/d/local_docker/odoo.conf --dev reload,xml'
+alias ox15='~/d/local_docker/odoo15/odoo-bin -c ~/d/local_docker/odoo.conf --dev reload,xml,qweb'
+alias oda15='~/d/local_docker/odoo15/odoo-bin -c ~/d/local_docker/odoo.conf --dev all'
+alias po15='python -m debugpy --listen localhost:5678 ~/d/local_docker/odoo15/odoo-bin -c ~/d/local_docker/odoo.conf'
+alias pod15='python -m debugpy --listen localhost:5678 ~/d/local_docker/odoo15/odoo-bin -c ~/d/local_docker/odoo.conf --dev reload,pdb'
+alias pox15='python -m debugpy --listen localhost:5678 ~/d/local_docker/odoo15/odoo-bin -c ~/d/local_docker/odoo.conf --dev reload,pdb,qweb'
+alias so15='~/d/local_docker/odoo15/odoo-bin shell -c ~/d/local_docker/odoo.conf'
+alias bo15='~/d/local_docker/odoo15/odoo-bin'
+
 alias to='~/d/local_docker/odoo16/odoo-bin -c ~/d/local_docker/odoo-temp.conf'
 alias top='~/d/local_docker/odoo_temp/odoo-bin -c ~/d/local_docker/odoo-temp.conf --dev reload,pdb'
 alias tod='~/d/local_docker/odoo_temp/odoo-bin -c ~/d/local_docker/odoo-temp.conf --dev reload,xml'
@@ -104,8 +113,8 @@ export PYTHONBREAKPOINT="pudb.set_trace"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-LIGHT_COLOR='gruvbox_light.yaml'
-DARK_COLOR='gruvbox_dark.yaml'
+# LIGHT_COLOR='gruvbox_light.yaml'
+# DARK_COLOR='gruvbox_dark.yaml'
 
 alias day="alacritty-colorscheme -V apply $LIGHT_COLOR"
 alias night="alacritty-colorscheme -V apply $DARK_COLOR"
@@ -122,9 +131,6 @@ export PATH="$HOME/neovim/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
 source "$HOME/.cargo/env"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
@@ -132,7 +138,9 @@ export PSQL_PAGER="pspg --interactive -s=19"
 export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.9.0/adapter/:$PATH"
 export PATH="/Users/son/.vscode/extensions/vadimcn.vscode-lldb-1.9.0/lldb/bin/:$PATH"
 
+
 CONDA_CHANGEPS1=no
+# conda config --set auto_activate_base true
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/son/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -148,7 +156,10 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+eval "$(fnm env --use-on-cd)"
+
 setopt globstarshort
 export PATH=~/.local/bin:"$PATH"
 
 ulimit -n 12288
+# zprof

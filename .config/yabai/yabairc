@@ -50,8 +50,8 @@ yabai -m config mouse_action1 move
 yabai -m config mouse_action2 resize
 
 yabai -m rule --add app="^(Docker Desktop|Calendar|Slack|Mail|Microsoft OneNote)$" space=6
-yabai -m rule --add app="^(Code)$" space=2
-yabai -m rule --add app="^(WezTerm|Alacritty|Neovide|neovide)$" space=3
+yabai -m rule --add app="^(Code|Neovide|neovide)$" space=2
+yabai -m rule --add app="^(WezTerm|Alacritty)$" space=3
 yabai -m rule --add app="^(Firefox|Google Chrome)$" space=1
 yabai -m rule --add app="^(Brave Browser|Firefox|Google Chrome)$" space=4
 yabai -m rule --add app="^(Music|Spotify|Amazon Music)$" space=5
