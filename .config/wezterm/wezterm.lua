@@ -17,8 +17,16 @@ end
 -- This is where you actually apply your config choices
 
 -- For example, changing the color scheme:
+-- config.color_scheme = 'Catppuccin Mocha'
+-- config.color_scheme = 'GruvboxDark'
 config.color_scheme = 'GruvboxDarkHard'
-config.font = wezterm.font 'JetBrainsMono Nerd Font'
+-- config.color_scheme = 'zenbones'
+-- config.color_scheme = 'zenbones_dark'
+-- config.color_scheme = 'zenwritten_dark'
+-- config.font = wezterm.font 'JetBrainsMono Nerd Font'
+-- config.font = wezterm.font 'FiraCode Nerd Font'
+-- config.font = wezterm.font 'Hack Nerd Font'
+config.font = wezterm.font 'LiterationMono Nerd Font'
 
 config.use_ime = false
 config.window_decorations = "RESIZE"

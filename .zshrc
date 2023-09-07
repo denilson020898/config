@@ -161,5 +161,15 @@ eval "$(fnm env --use-on-cd)"
 setopt globstarshort
 export PATH=~/.local/bin:"$PATH"
 
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+bindkey '^ ' autosuggest-accept
+fpath=(/Users/son/.zsh/zsh-completions/src $fpath)
+
+# Load Git completion
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+fpath=(~/.zsh $fpath)
+
+autoload -Uz compinit && compinit
+
 ulimit -n 12288
 # zprof
