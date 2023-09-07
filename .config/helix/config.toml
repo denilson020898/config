@@ -2,8 +2,31 @@ theme = "gruvbox"
 
 [editor]
 # line-number = "relative"
+bufferline = "multiple"
+cursorline = true
+color-modes = true
+lsp.display-inlay-hints = true
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.indent-guides]
+render = true
+
+[keys.normal]
+"F4" = [
+  "move_prev_word_start",
+  "move_next_word_end",
+  "search_selection",
+  "global_search",
+]
+"S-F12" = ":config-open"
+"C-F12" = ":config-reload"
+[keys.normal."+"]
+m = ":run-shell-command make"
+b = ":run-shell-command cargo build"
+r = ":run-shell-command cargo run"
+c = ":run-shell-command cargo check"
+t = ":run-shell-command pytest ."
