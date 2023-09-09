@@ -43,6 +43,8 @@ alias zd='cd ~/.config/nvim/'
 alias zg='nvim ~/.gitconfig'
 alias zz='nvim ~/.zshrc'
 
+alias h='hx .'
+
 alias zr='source ~/.zshrc'
 alias zc='nvim ~/d/local_docker/odoo.conf'
 alias zx='nvim ~/d/local_docker/odoo-temp.conf'
@@ -131,6 +133,9 @@ export PATH="$HOME/neovim/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
 source "$HOME/.cargo/env"
 
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"

@@ -5,28 +5,48 @@ theme = "gruvbox"
 bufferline = "multiple"
 cursorline = true
 color-modes = true
+auto-save = true
 lsp.display-inlay-hints = true
+idle-timeout = 0
+rulers = [80, 120]
+gutters = ["diff", "diagnostics", "line-numbers", "spacer"]
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.indent-guides]
+render = true
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
 
-[editor.indent-guides]
-render = true
+[editor.statusline]
+left = ["mode", "spinner", "version-control"]
+center = ["file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
 
 [keys.normal]
-"F4" = [
-  "move_prev_word_start",
-  "move_next_word_end",
-  "search_selection",
-  "global_search",
-]
 "S-F12" = ":config-open"
 "C-F12" = ":config-reload"
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+D = ["ensure_selections_forward", "extend_to_line_end"]
+
+[keys.normal."space"]
+o = "file_picker_in_current_buffer_directory"
+
 [keys.normal."+"]
 m = ":run-shell-command make"
 b = ":run-shell-command cargo build"
 r = ":run-shell-command cargo run"
 c = ":run-shell-command cargo check"
-t = ":run-shell-command pytest ."
+t = ":run-shell-command pytest"
+

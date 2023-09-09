@@ -18,8 +18,9 @@ end
 
 -- For example, changing the color scheme:
 -- config.color_scheme = 'Catppuccin Mocha'
--- config.color_scheme = 'GruvboxDark'
-config.color_scheme = 'GruvboxDarkHard'
+config.color_scheme = 'GruvboxDark'
+-- config.color_scheme = 'GruvboxDarkHard'
+-- config.color_scheme = 'tokyonight'
 -- config.color_scheme = 'zenbones'
 -- config.color_scheme = 'zenbones_dark'
 -- config.color_scheme = 'zenwritten_dark'

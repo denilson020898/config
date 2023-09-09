@@ -1,44 +1,33 @@
 [[language]]
-name = "python"
-# roots = ["pyproject.toml"]
-language-server = { command = "pyright-langserver", args = ["--stdio"] }
-# NOTE: the following is important even if config is empty.
-config = { }
-formatter = { command = "black", args = ["--quiet", "-"] }
-auto-format = true
+name = "rust"
 
-# [language-server.pyright]
-# command = "pyright-langserver"
-# args = ["--stdio"]
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+[language.debugger]
+command = "codelldb"
+name = "codelldb"
+port-arg = "--port {}"
+transport = "tcp"
+
+[[language.debugger.templates]]
+name = "binary"
+request = "launch"
+[[language.debugger.templates.completion]]
+completion = "filename"
+name = "binary"
+
+[language.debugger.templates.args]
+program = "{0}"
+runInTerminal = true
+
+[[language]]
+name = "python"
+roots = ["pyproject.toml", "setup.py", "Poetry.lock", ".git"]
+language-server = { command = "pyright-langserver", args = ["--stdio"] }
+auto-format = true
+formatter = {command = 'black', args = ["--quiet", "-"]}
+config = ""
 
 [language-server.pyright.config.python.analysis]
-typeCheckingMode = "off"
-
-[[language]]
-name = "html"
-indent = { tab-width = 2, unit = "  " }
-language-server = { command = "emmet-ls", args = ["--stdio"] }
-formatter = { command = "emmet-ls" , args = ["--stdin"] }
- 
-[[language]]
-name = "css"
-indent = { tab-width = 2, unit = "  " }
-language-server = { command = "css-languageserver", args = ["--stdio"] }
-formatter = { command = "css-languageserver" , args = ["--stdin"] }
- 
-[[language]]
-
-name = "go"
-scope = "source.go"
-injection-regex = "go"
-file-types = ["go"]
-roots = ["Gopkg.toml", "go.mod"]
-auto-format = true
-comment-token = "//"
-language-server = { command = "gopls" }
-indent = { tab-width = 4, unit = "\t" }
-
-[[language]]
-name = "astro"
-language-server = { command = "astro-ls", args = ["--stdio"]}
-formatter = { command = "astro-ls", args = ["--stdin"]}
+typeCheckingMode = "strict"
